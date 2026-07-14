@@ -1,0 +1,18 @@
+{
+  // workspace MCP servers (.vscode/mcp.json)
+  "servers": {
+    "api": {
+      "type": "sse",
+      "command": "node",
+      "args": ["${workspaceFolder}/dist/index.js"]
+    },
+    "docs": {
+      "type": "http",
+      "url": "https://example.test/mcp",
+      "headers": { "Authorization": "Bearer ${input:docs-token}" }
+    }
+  },
+  "inputs": [
+    { "type": "promptString", "id": "api-token", "password": true }
+  ]
+}

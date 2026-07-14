@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx -y @modelcontextprotocol/server-github",
+      "env": { "GITHUB_TOKEN": "AAAAAAAAAAAAAAAAAAAA" }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-filesystem", "~/Documents"]
+    },
+    "sqlite": {
+      "command": "python",
+      "args": ["./servers/sqlite.js", "--db", "/srv/data/app.db"]
+    },
+    "tickets": {
+      "url": "https://mcp.example.test/sse"
+    },
+    "notes": {
+      "cmd": "node",
+      "args": ["/opt/notes-server/index.js", 8080]
+    }
+  }
+}

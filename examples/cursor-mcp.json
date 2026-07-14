@@ -1,0 +1,18 @@
+{
+  // team MCP servers — edit and commit
+  "mcpServers": {
+    "search": {
+      "command": "npx",
+      "args": ["-y", "example-search-server"],
+      "type": "stdio"
+    },
+    "internal-api": {
+      "url": "http://mcp.example.test/sse",
+      "headers": { "Authorization": "Bearer AAAAAAAAAAAAAAAAAAAA" }
+    },
+    "search": {
+      "command": "uvx",
+      "args": ["example-search-server"],
+    }
+  }
+}

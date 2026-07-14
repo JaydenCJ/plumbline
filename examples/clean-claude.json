@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/srv/shared-docs"]
+    },
+    "sqlite": {
+      "command": "/usr/bin/python3",
+      "args": ["/opt/mcp/sqlite_server.py", "--db", "/srv/data/app.db"],
+      "env": { "LOG_LEVEL": "info" }
+    }
+  }
+}
