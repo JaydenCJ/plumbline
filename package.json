@@ -2,7 +2,7 @@
   "name": "plumbline",
   "version": "0.1.0",
   "description": "Lints MCP client config files across Claude Desktop, Cursor and VS Code — knows each client's schema and pitfalls, with a fix and a stable code on every finding.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
